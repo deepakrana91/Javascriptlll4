@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<p>Click on this button to call the function </p>
+
+<button type="button" onclick="outerFunc()">Button to call inner fuction</button>  <!-- creating a button just to call the outer fuction -->
+
+<script>
+counter=1; // without this counter i was getting error that counter not defined
+function outerFunc() {
+
+	function innerFunc(){
+	    console.log("hello world From inner function");
+		console.log(counter);
+	}
+    innerFunc();
+}
+
+
+
+</script>
+
+</body>
+</html>
+
